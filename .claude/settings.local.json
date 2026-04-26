@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(npx --yes create-vite@5.5.5 person-temp --template react-ts)",
+      "Bash(mv person-temp/* .)",
+      "Bash(mv person-temp/.gitignore .)",
+      "Bash(rm -rf person-temp)",
+      "Bash(npm install *)",
+      "Bash(npx tailwindcss *)",
+      "Bash(./node_modules/.bin/tailwindcss init *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173)"
+    ]
+  }
+}

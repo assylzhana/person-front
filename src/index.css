@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased min-h-screen;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-700 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-600;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-slate-900 border border-slate-800 rounded-2xl p-6;
+  }
+  .card-sm {
+    @apply bg-slate-900 border border-slate-800 rounded-xl p-4;
+  }
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-500 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95 cursor-pointer;
+  }
+  .btn-secondary {
+    @apply bg-slate-800 hover:bg-slate-700 text-slate-100 font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 active:scale-95 cursor-pointer;
+  }
+  .btn-ghost {
+    @apply hover:bg-slate-800 text-slate-400 hover:text-slate-100 font-medium px-4 py-2 rounded-xl transition-all duration-200 cursor-pointer;
+  }
+  .btn-danger {
+    @apply bg-red-600/20 hover:bg-red-600/30 text-red-400 font-semibold px-5 py-2.5 rounded-xl border border-red-600/30 transition-all duration-200 active:scale-95 cursor-pointer;
+  }
+  .input {
+    @apply w-full bg-slate-800 border border-slate-700 text-slate-100 placeholder-slate-500 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200;
+  }
+  .label {
+    @apply block text-sm font-medium text-slate-400 mb-1.5;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .nav-link {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-400 hover:text-slate-100 hover:bg-slate-800 transition-all duration-200 font-medium text-sm cursor-pointer;
+  }
+  .nav-link-active {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-xl text-primary-400 bg-primary-600/10 font-semibold text-sm border border-primary-600/20;
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}

@@ -128,7 +128,7 @@ export interface TestStats {
 }
 
 // Goals
-export type GoalCategory = 'HEALTH' | 'EDUCATION' | 'FINANCE' | 'CAREER' | 'PERSONAL' | 'SOCIAL' | 'OTHER';
+export type GoalCategory = 'HEALTH' | 'EDUCATION' | 'FINANCE' | 'CAREER' | 'PERSONAL' | 'PERSONAL_DEVELOPMENT' | 'SOCIAL' | 'OTHER';
 export type GoalPeriodType = 'DAILY' | 'WEEKLY' | 'MONTHLY' | 'YEARLY' | 'CUSTOM';
 export type GoalStatus = 'ACTIVE' | 'COMPLETED' | 'FAILED';
 

@@ -50,7 +50,7 @@ const en = {
     status: { ACTIVE: 'Active', COMPLETED: 'Completed', FAILED: 'Failed' },
     categories: {
       HEALTH: 'Health', EDUCATION: 'Education', FINANCE: 'Finance',
-      CAREER: 'Career', PERSONAL: 'Personal', SOCIAL: 'Social', OTHER: 'Other',
+      CAREER: 'Career', PERSONAL: 'Personal', PERSONAL_DEVELOPMENT: 'Personal development', SOCIAL: 'Social', OTHER: 'Other',
     },
     periods: { DAILY: 'Daily', WEEKLY: 'Weekly', MONTHLY: 'Monthly', YEARLY: 'Yearly', CUSTOM: 'Custom' },
     progress: 'Progress', deadline: 'Deadline',

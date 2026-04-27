@@ -50,7 +50,7 @@ const kk = {
     status: { ACTIVE: 'Белсенді', COMPLETED: 'Орындалған', FAILED: 'Сәтсіз' },
     categories: {
       HEALTH: 'Денсаулық', EDUCATION: 'Білім', FINANCE: 'Қаржы',
-      CAREER: 'Мансап', PERSONAL: 'Жеке', SOCIAL: 'Әлеуметтік', OTHER: 'Басқа',
+      CAREER: 'Мансап', PERSONAL: 'Жеке', PERSONAL_DEVELOPMENT: 'Жеке даму', SOCIAL: 'Әлеуметтік', OTHER: 'Басқа',
     },
     periods: { DAILY: 'Күнделікті', WEEKLY: 'Апта сайын', MONTHLY: 'Ай сайын', YEARLY: 'Жыл сайын', CUSTOM: 'Өзгелей' },
     progress: 'Прогресс', deadline: 'Мерзім',

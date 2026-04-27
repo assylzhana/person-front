@@ -50,7 +50,7 @@ const ru = {
     status: { ACTIVE: 'Активна', COMPLETED: 'Завершена', FAILED: 'Провалена' },
     categories: {
       HEALTH: 'Здоровье', EDUCATION: 'Образование', FINANCE: 'Финансы',
-      CAREER: 'Карьера', PERSONAL: 'Личное', SOCIAL: 'Социальное', OTHER: 'Другое',
+      CAREER: 'Карьера', PERSONAL: 'Личное', PERSONAL_DEVELOPMENT: 'Личностный рост', SOCIAL: 'Социальное', OTHER: 'Другое',
     },
     periods: { DAILY: 'Ежедневно', WEEKLY: 'Еженедельно', MONTHLY: 'Ежемесячно', YEARLY: 'Ежегодно', CUSTOM: 'Своё' },
     progress: 'Прогресс', deadline: 'Дедлайн',

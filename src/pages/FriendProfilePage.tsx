@@ -6,7 +6,7 @@ import { PageLoader } from '../components/ui/Spinner';
 import { ProgressBar } from '../components/ui/ProgressBar';
 import { EmptyState } from '../components/ui/EmptyState';
 import {
-  ArrowLeft, Globe, Lock, Mail, Target, Brain, TrendingUp,
+  ArrowLeft, Lock, Mail, Target, Brain, TrendingUp,
   Star, Trophy, Zap,
 } from 'lucide-react';
 import { cn } from '../utils/cn';

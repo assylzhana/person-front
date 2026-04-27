@@ -18,7 +18,7 @@ import { cn } from '../utils/cn';
 import { formatDate, getDaysUntil } from '../utils/format';
 import { AxiosError } from 'axios';
 
-const CATEGORIES: GoalCategory[] = ['HEALTH', 'EDUCATION', 'FINANCE', 'CAREER', 'PERSONAL', 'SOCIAL', 'OTHER'];
+const CATEGORIES: GoalCategory[] = ['HEALTH', 'EDUCATION', 'FINANCE', 'CAREER', 'PERSONAL', 'PERSONAL_DEVELOPMENT', 'SOCIAL', 'OTHER'];
 const PERIODS = ['DAILY', 'WEEKLY', 'MONTHLY', 'YEARLY', 'CUSTOM'] as const;
 
 const catColors: Record<GoalCategory, string> = {
@@ -27,6 +27,7 @@ const catColors: Record<GoalCategory, string> = {
   FINANCE: 'bg-violet-600/20 text-violet-400 border-violet-600/30',
   CAREER: 'bg-amber-600/20 text-amber-400 border-amber-600/30',
   PERSONAL: 'bg-pink-600/20 text-pink-400 border-pink-600/30',
+  PERSONAL_DEVELOPMENT: 'bg-purple-600/20 text-purple-400 border-purple-600/30',
   SOCIAL: 'bg-cyan-600/20 text-cyan-400 border-cyan-600/30',
   OTHER: 'bg-slate-600/20 text-slate-400 border-slate-600/30',
 };
@@ -103,7 +104,7 @@ export function GoalsPage() {
   const schema = z.object({
     title:      z.string().min(1, t('goals.titleRequired')),
     description: z.string().optional(),
-    category:   z.enum(['HEALTH', 'EDUCATION', 'FINANCE', 'CAREER', 'PERSONAL', 'SOCIAL', 'OTHER']),
+    category:   z.enum(['HEALTH', 'EDUCATION', 'FINANCE', 'CAREER', 'PERSONAL', 'PERSONAL_DEVELOPMENT', 'SOCIAL', 'OTHER']),
     periodType: z.enum(['DAILY', 'WEEKLY', 'MONTHLY', 'YEARLY', 'CUSTOM']),
     deadline:   z.string().min(1, t('goals.deadlineRequired')),
   });
